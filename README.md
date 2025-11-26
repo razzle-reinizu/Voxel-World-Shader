@@ -4,7 +4,7 @@
 
 A fragment shader that renders a procedural voxel world using per-fragment **Amanatides–Woo DDA** traversal, hash/value-noise terrain, deterministic tree placement, simple material sampling, and an approximate atmosphere model.
 
-## Features (at-a-glance)
+## Features 
 
 * Voxel grid ray traversal (DDA)
 * Heightmap-driven terrain + single-octave FBM
@@ -40,7 +40,7 @@ A fragment shader that renders a procedural voxel world using per-fragment **Ama
 
 * `hash12/hash13`: fast pseudo-random hash (fract(sin(dot(...))).
 * `noise3`: value-noise on unit lattice with Hermite smoothing and trilinear interpolation.
-* `fbm3`: `0.5 * noise3` (single-octave wrapper).
+* `noise` (single-octave wrapper).
 * `proceduralTerrainHeight` adjusts frequency/scale by `QUALITY`.
 
 ## Materials & UVs
